@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>GATHBANDHAN</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet'
+		type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Magnific popup  -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	<!-- Slider CSS-->
+	<style>
+		.home-section {
+			height: 100vh;
+			position: relative;
+		}
+
+		.home-section .slide {
+			background-position: center;
+			background-size: cover;
+			position: absolute;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			visibility: hidden;
+			transition: all 1s ease-in-out;
+		}
+
+		.home-section .slide.active {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.home-section .slide:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.7);
+			z-index: -1;
+		}
+
+		.home-section .row {
+			height: 100vh;
+		}
+
+		.home-section .home-content {
+			flex: 0 0 100%;
+			max-width: 100;
+			padding: 0 15px;
+			text-align: center;
+			margin-top: 23%;
+		}
+
+		.home-section .home-content p {
+			font-size: 24px;
+			color: #ffffff;
+			margin: 0 0 15px;
+		}
+
+		.home-section .slide.active .home-content p {
+			opacity: 0;
+			animation: fadeInTop 1s ease forwards;
+		}
+
+		@keyframes fadeInTop {
+			0% {
+				transform: translateY(-50px);
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateY(0px);
+			}
+		}
+
+		.home-section .home-content h1 {
+			font-size: 100px;
+			color: #ffffff;
+			margin: 0;
+			font-weight: normal;
+			/* font-family: 'Great Vibes', cursive; */
+		}
+
+		.home-section .slide.active .home-content h1 {
+			opacity: 0;
+			animation: fadeInTop 1s ease forwards;
+			animation-delay: 0.5s;
+		}
+
+		.home-section .home-content span {
+			font-size: 20px;
+			display: inline-block;
+			border: 1px solid #ffffff;
+			border-radius: 30px;
+			color: #ffffff;
+			padding: 7px 30px;
+			margin: 15px 0 0;
+		}
+
+		.home-section .slide.active .home-content span {
+			opacity: 0;
+			animation: fadeInTop 1s ease forwards;
+			animation-delay: 1s;
+		}
+	</style>
+
+	<style>
+
+		@media (max-width:768px) {
+			.home-content h1{
+				font-size: 80px !important;
+			}
+			.abt{
+				margin-top: -150px;
+			}
+			.home-section{
+				height: 65vh !important;
+			}
+			.navbar-brand img{
+				width: 130px;
+				height: 110px;
+				margin-top: -47px !important;
+			}
+		}
+
+		@media (max-width:1024px) {
+			.home-section{
+				height: 60vh !important;
+			}
+		}
+	</style>
+
+
+
+</head>
+
+<body>
+	<header role="banner" id="qbootstrap-header">
+		<div class="container">
+			<!-- <div class="row"> -->
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<!-- Mobile Toggle Menu Button -->
+					<a href="#" class="js-qbootstrap-nav-toggle qbootstrap-nav-toggle" data-toggle="collapse"
+						data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+					<a class="navbar-brand" href="index.html"><img src="logo.png" width="180px" height="160px" style="margin-top: -80px"></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
+						<li><a href="#" data-nav-section="about-us"><span>About Us</span></a></li>
+						<li><a href="#" data-nav-section="groom-bride"><span>Mentors</span></a></li>
+						<li><a href="#" data-nav-section="when-where"><span>Events</span></a></li>
+						<li><a href="#" data-nav-section="gallery"><span>Gallery</span></a></li>
+						<li><a href="#" data-nav-section="rsvp"><span>Book</span></a></li>
+					</ul>
+				</div>
+			</nav>
+			<!-- </div> -->
+		</div>
+	</header>
+
+	<div class="qbootstrap-hero" data-section="home">
+
+		<section class="home-section">
+
+			<div class="slide active" style="background-image:url('images/slides/slide2.jpg');">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="home-content">
+							<p>Cherish Every Moment</p>
+							<h1>Weeding!</h1>
+							<br>
+							<span><a href="#form1" style="color: white;">Book us</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide" style="background-image:url('images/slides/slide4.jpg');">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="home-content">
+							<p>Many! Many! Happy Returns Of The Day</p>
+							<h1>Birthday</h1>
+							<br>
+							<span><a href="#form1" style="color: white;">Book us</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide" style="background-image:url('images/slides/slide5.jpg');">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="home-content">
+							<p>Promotion? Wanna Celebrate?</p>
+							<h1>Parties</h1>
+							<br>
+							<span><a href="#form1" style="color: white;">Book us</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<div id="qbootstrap-groom-bride" data-section="about-us" class="abt">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-12 text-center section-heading svg-sm-2 colored">
+						<img src="images/flaticon/svg/005-two.svg" class="svg" alt="">
+						<h2>About Us</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam accusamus, sequi, minima
+							repellendus explicabo magni aperiam, ducimus perferendis ad quidem suscipit omnis unde
+							veritatis pariatur. Commodi, nisi. Iusto, accusantium a.</p>
+					</div>
+				</div>
+			</div>
+			
+			</div>
+		</div>
+	</div>
+
+
+    <div id="qbootstrap-groom-bride" data-section="groom-bride" style="margin-top: -150px !important;">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-12 text-center section-heading svg-sm-2 colored">
+						<img src="images/flaticon/svg/005-two.svg" class="svg" alt="">
+						<h2>Our Mentors</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam accusamus, sequi, minima
+							repellendus explicabo magni aperiam, ducimus perferendis ad quidem suscipit omnis unde
+							veritatis pariatur. Commodi, nisi. Iusto, accusantium a.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="couple groom text-center animate-box">
+						<img src="images/groom.jpg" class="img-responsive" alt="" style="height: 300px;">
+						<div class="desc">
+							<h2>Harsh</h2>
+							<p>Details Coming Soon</p>
+							<ul class="social social-circle">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="couple bride text-center animate-box">
+						<img src="images/bride.jpg" class="img-responsive" alt="" style="height: 300px;">
+						<div class="desc">
+							<h2>Aditi</h2>
+							<p>Details Coming soon</p>
+							<ul class="social social-circle">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div id="qbootstrap-story" data-section="story">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-12 text-center section-heading svg-sm-2">
+						<img src="images/flaticon/svg/003-luxury.svg" class="svg" alt="">
+						<h2>Our Love Story</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="timeline animate-box">
+						<li class="animate-box">
+							<div class="timeline-badge" style="background-image:url(images/couple-1.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="overlay"></div>
+								<div class="timeline-heading">
+									<h3 class="timeline-title">First We Meet</h3>
+									<span class="date">June 10, 2017</span>
+								</div>
+								<div class="timeline-body">
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in .</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge" style="background-image:url(images/couple-2.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="overlay overlay-2"></div>
+								<div class="timeline-heading">
+									<h3 class="timeline-title">First Date</h3>
+									<span class="date">June 10, 2017</span>
+								</div>
+								<div class="timeline-body">
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in .</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box">
+							<div class="timeline-badge" style="background-image:url(images/couple-3.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="overlay"></div>
+								<div class="timeline-heading">
+									<h3 class="timeline-title">In A Relationship</h3>
+									<span class="date">June 14, 2017</span>
+								</div>
+								<div class="timeline-body">
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in .</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge" style="background-image:url(images/couple-4.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="overlay overlay-2"></div>
+								<div class="timeline-heading">
+									<h3 class="timeline-title">We're Engaged</h3>
+									<span class="date">Sept. 01, 2017</span>
+								</div>
+								<div class="timeline-body">
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in .</p>
+								</div>
+							</div>
+						</li>
+			    	</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	 -->
+
+
+
+	<div id="qbootstrap-when-where" data-section="when-where">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-12 text-center section-heading svg-sm colored">
+						<img src="images/flaticon/svg/005-two.svg" class="svg" alt="">
+						<h2>Events Managed by Us !</h2>
+						<div class="row">
+							<div class="col-md-10 col-md-offset-1 subtext">
+								<h3>Far far away, behind the word mountains, far from the countries Vokalia and
+									Consonantia, there live the blind texts.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-bottom-padded-md">
+				<div class="col-md-6 text-center animate-box">
+					<div class="wedding-events">
+						<div class="ceremony-bg" style="background-image: url(images/wedding.jpg);"></div>
+						<div class="desc">
+							<h3>Wedding Ceremonies</h3>
+
+							<p>Details Coming Soon!</p>
+							<p><a href="#form1" class="btn btn-primary btn-sm">Book now</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 text-center animate-box">
+					<div class="wedding-events">
+						<div class="ceremony-bg" style="background-image: url(images/birthday.jpg);"></div>
+						<div class="desc">
+							<h3>Birthday Parties</h3>
+
+							<p>Details Coming Soon!</p>
+							<p><a href="#form1" class="btn btn-primary btn-sm">Book now</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 text-center animate-box" style="margin-top: 40px;">
+					<div class="wedding-events">
+						<div class="ceremony-bg" style="background-image: url(images/music.jpg);"></div>
+						<div class="desc">
+							<h3>Casual Parties</h3>
+
+							<p>Details Coming Soon!</p>
+							<p><a href="#form1" class="btn btn-primary btn-sm">Book now</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 text-center animate-box" style="margin-top: 40px;">
+					<div class="wedding-events">
+						<div class="ceremony-bg" style="background-image: url(images/corporate.jpg);"></div>
+						<div class="desc">
+							<h3>Formal Parties</h3>
+
+							<p>Details Coming Soon!</p>
+							<p><a href="#form1" class="btn btn-primary btn-sm">Book now</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div id="map" class="qbootstrap-map"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div id="qbootstrap-press" data-section="blog">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-12 text-center section-heading svg-sm colored">
+						<img src="images/flaticon/svg/005-two.svg" class="svg" alt="">
+						<h2>Services we Provide</h2>
+						<div class="row">
+							<div class="col-md-10 col-md-offset-1 subtext">
+								<h3>Far far away, behind the word mountains, far from the countries Vokalia and
+									Consonantia, there live the blind texts.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="qbootstrap-press-item animate-box">
+						<div class="qbootstrap-press-img" style="background-image: url(images/stage2.jpg)">
+						</div>
+						<div class="qbootstrap-press-text">
+							<h3 class="h2 qbootstrap-press-title">Event Conceptualization <span
+									class="qbootstrap-border"></span></h3>
+							<p>Details Coming Soon!</p>
+							<p><a href="#form1" class="btn btn-primary btn-sm">Book now!</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="qbootstrap-press-item animate-box">
+						<div class="qbootstrap-press-img" style="background-image: url(images/stage3.jpg)">
+						</div>
+						<div class="qbootstrap-press-text">
+							<h3 class="h2 qbootstrap-press-title">Decor Management <span class="qbootstrap-border"></span>
+							</h3>
+							<p>Details Coming Soon!</p>
+							<p><a href="#form1" class="btn btn-primary btn-sm">Book now!</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="qbootstrap-press-item animate-box">
+						<div class="qbootstrap-press-img" style="background-image: url(images/stage4.jpg);">
+						</div>
+						<div class="qbootstrap-press-text">
+							<h3 class="h2 qbootstrap-press-title">Catering Seivices <span class="qbootstrap-border"></span>
+							</h3>
+							<p>Details Coming Soon!</p>
+							<p><a href="#form1" class="btn btn-primary btn-sm">Book now!</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="qbootstrap-press-item animate-box">
+						<div class="qbootstrap-press-img" style="background-image: url(images/stage5.jpg);">
+						</div>
+						<div class="qbootstrap-press-text">
+							<h3 class="h2 qbootstrap-press-title">Food & Beverage Management <span
+									class="qbootstrap-border"></span></h3>
+							<p>Details Coming Soon!</p>
+							<p><a href="#form1" class="btn btn-primary btn-sm">Book now!</a></p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div id="qbootstrap-started" class="qbootstrap-bg" data-section="rsvp" data-stellar-background-ratio="0.5"
+		style="background-image: url(images/cover_bg_1.jpg);">
+		<div class="overlay"></div>
+		<div class="container" id="form1">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-12 text-center section-heading svg-sm colored">
+						<img src="images/flaticon/svg/005-two.svg" class="svg" alt="">
+						<h2>Book Now</h2>
+						<div class="row">
+							<div class="col-md-10 col-md-offset-1 subtext">
+								<h3>Far far away, behind the word mountains, far from the countries Vokalia and
+									Consonantia, there live the blind texts.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="signup-form">
+						<form class="form-inline submit-now">
+							<div class="col-md-4 col-sm-4">
+								<div class="form-group">
+									<label for="name" class="sr-only">Name</label>
+									<input type="text" class="form-control name" id="name" placeholder="Name">
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<div class="form-group">
+									<label for="contact" class="sr-only">Contact</label>
+									<input type="text" class="form-control contact" id="contact" placeholder="Contact">
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<div class="form-group">
+									<label for="email" class="sr-only">Email</label>
+									<input type="email" class="form-control email" id="email" placeholder="Email">
+								</div>
+							</div>
+							
+							<div class="col-md-4"></div>
+							<div class="col-md-4 col-sm-4" style="margin-top: 6%;">
+								<button type="submit" class="btn btn-default btn-block"
+									onclick="validate()">Book</button>
+							</div>
+							<div class="col-md-4"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="qbootstrap-gallery" data-section="gallery">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-12 text-center section-heading svg-sm colored">
+						<img src="images/flaticon/svg/005-two.svg" class="svg" alt="">
+						<h2>Gallery</h2>
+						<div class="row">
+							<div class="col-md-10 col-md-offset-1 subtext">
+								<h3>Far far away, behind the word mountains, far from the countries Vokalia and
+									Consonantia, there live the blind texts.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup image-popup" href="images/gallery-1.jpg"><img
+								src="images/gallery-1.jpg" class="img-responsive" alt=""></a>
+					</div>
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/gallery-10.jpg"><img src="images/gallery-10.jpg"
+								class="img-responsive" alt=""></a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/gallery-6.jpg"><img src="images/gallery-6.jpg"
+								class="img-responsive" alt=""></a>
+					</div>
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/gallery-2.jpg"><img src="images/gallery-2.jpg"
+								class="img-responsive" alt=""></a>
+					</div>
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/gallery-5.jpg"><img src="images/gallery-5.jpg"
+								class="img-responsive" alt=""></a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/gallery-7.jpg"><img src="images/gallery-7.jpg"
+								class="img-responsive" alt=""></a>
+					</div>
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/gallery-3.jpg"><img src="images/gallery-3.jpg"
+								class="img-responsive" alt=""></a>
+					</div>
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/gallery-4.jpg"><img src="images/gallery-4.jpg"
+								class="img-responsive" alt=""></a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/gallery-8.jpg"><img src="images/gallery-8.jpg"
+								class="img-responsive" alt=""></a>
+					</div>
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/gallery-9.jpg"><img src="images/gallery-9.jpg"
+								class="img-responsive" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="qbootstrap-testimonials" class="qbootstrap-greetings" data-section="greetings"
+		data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_1.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-12 section-heading text-center svg-sm colored">
+					<img src="images/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg"
+						class="svg" alt="">
+					<h2 class="">What People Say About Us !</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 animate-box">
+					<div class="box-testimony ">
+						<blockquote>
+							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and
+								Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at
+								the coast of the Semantics, a large language ocean.&rdquo;</p>
+						</blockquote>
+						<p class="author">John Doe</p>
+					</div>
+
+				</div>
+				<div class="col-md-4 animate-box">
+					<div class="box-testimony ">
+						<blockquote>
+							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and
+								Consonantia, there live the blind texts.&rdquo;</p>
+						</blockquote>
+						<p class="author">John Doe</p>
+					</div>
+
+
+				</div>
+				<div class="col-md-4 animate-box">
+					<div class="box-testimony ">
+						<blockquote>
+							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and
+								Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at
+								the coast of the Semantics, a large language ocean.&rdquo;</p>
+						</blockquote>
+						<p class="author">John Doe</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer id="footer" role="contentinfo">
+		<div class="container">
+			<div class="row row-bottom-padded-sm">
+				<div class="col-md-12">
+					<p class="copyright text-center">&copy; 2021 <a href="index.html">GATHBANDHAN</a> All Rights Reserved |
+						Designed by <a href="" target="_blank">Rhituraj</a></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="social social-circle">
+						<li><a href="#"><i class="icon-twitter"></i></a></li>
+						<li><a href="#"><i class="icon-facebook"></i></a></li>
+						<li><a href="#"><i class="icon-youtube"></i></a></li>
+						<li><a href="#"><i class="icon-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Firebase-->
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase.js"></script>
+	<!-- Form Validation-->
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyA4aIq6WuB34_EJet82NtM0y1f269R9YNE",
+			authDomain: "gathbandhan-b9696.firebaseapp.com",
+			projectId: "gathbandhan-b9696",
+			storageBucket: "gathbandhan-b9696.appspot.com",
+			messagingSenderId: "1016871053518",
+			appId: "1:1016871053518:web:94bee1acd8643715f6489f"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		//reference contactInfo collection
+
+		let ContactInfo = firebase.database().ref("infos");
+
+
+		function validate() {
+			var nam = document.getElementById('name').value;
+			var inputText = document.getElementById('Email');
+
+			var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+			if (event.value == "Select") {
+				alert("Please select event");
+				event.focus();
+				return false;
+			}
+			var check = false;
+			for (var i = batch.length - 1; i >= 0; i--) {
+				if (batch[i].checked) {
+					check = true;
+				}
+			}
+			if (check == false) {
+				alert("Select Timing");
+				return false;
+			}
+			return false;
+			if (!isNaN(nam)) {
+				alert("Name not valid");
+				return false;
+			}
+
+			if (!inputText.value.match(mailformat)) {
+
+				alert("You have entered an invalid email address!");
+				document.form1.Email.focus();
+				return false;
+			} else {
+				return true;
+			}
+		}
+		//listen for a submit
+		document.querySelector(".signup-form").addEventListener("submit", bookEvent);
+
+		function bookEvent(e) {
+			e.preventDefault();
+			//get input values
+			let Name = document.querySelector(".name").value;
+			let Email = document.querySelector(".email").value;
+			let Contact = document.querySelector(".contact").value;
+			console.log(Name, Email, Contact);
+
+			saveContactInfo(Name, Email, Contact);
+		}
+
+		//save infos to firebase
+		function saveContactInfo(Name, Email, Contact) {
+			let newContactInfo = ContactInfo.push();
+
+			newContactInfo.set({
+				Name: Name,
+				Email: Email,
+				Contact: Contact,
+			})
+		}
+	</script>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- YTPlayer -->
+	<script src="js/jquery.mb.YTPlayer.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- slider-->
+	<script>
+		$(window).on("load", function () {
+			let slideIndex = $(".slide.active").index();
+			const slideLen = $(".slide").length;
+
+			function slideShow() {
+				$(".slide").removeClass("active").eq(slideIndex).addClass("active");
+				if (slideIndex == slideLen - 1) {
+					slideIndex = 0;
+				} else {
+					slideIndex++;
+				}
+				setTimeout(slideShow, 5000);
+			}
+			slideShow();
+
+
+
+		})
+	</script>
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
