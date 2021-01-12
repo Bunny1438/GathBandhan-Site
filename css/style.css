@@ -1391,6 +1391,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   background-size: cover;
 }
+/* responsiveness */ 
 @media screen and (max-width: 480px) {
   #qbootstrap-press .qbootstrap-press-item .qbootstrap-press-img {
     height: 200px;
